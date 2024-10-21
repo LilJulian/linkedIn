@@ -7,8 +7,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+.espacios {
+  height: 10px;
+  border: none;
+}
+
 body {
-  background-color: #5f5f5f;
+  background-color: #f4f2ee;
 }
 
 .encabezado {
@@ -113,25 +118,155 @@ li {
   font-size: 0.8rem;
 }
 
-.menu__logo img {
+.perfil {
   position: relative;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  margin: 0 20px 0 10px;
 }
 
-.menu__logo {
-  background: none;
-  border: 0;
+.perfil__online {
+  position: relative;
 }
 
-.menu__logo::after {
+.perfil__online::after {
   content: '';
   height: 7px;
   width: 7px;
   border: 2px solid #fff;
   border-radius: 50%;
+  right: 0px;
+  top: 0px;
   background-color: #41db51;
   position: absolute;
+}
+
+.imagen__perfil {
+  margin-left: 8px;
+  width: 30px;
+  height: 35px;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+/* sidebar */
+
+.layout {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 250px 1fr 250px;
+  height: 100vh;
+  gap: 10px;
+  grid-area:
+    'sidebar content content asidebar';
+  padding-top: calc(52px + 20px);
+}
+
+.contenedor {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 10px 10px;
+}
+
+.sidebar {
+  grid-area: 'sidebar';
+}
+
+.sidebar__profile {
+  height: 350px;
+  width: 100%;
+  background-color: #fff;
+
+}
+
+.fondo_barca {
+  height: 80px;
+  width: 100%;
+}
+
+.profile__info {
+  margin: -45px 0 0 20px;
+}
+
+.leo__sidebar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 5px #fff;
+
+}
+
+.profile__info h1 {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+
+.profile__info h3 {
+  color: #5f5f5f;
+  font-size: 0.9rem;
+}
+
+.lista {
+  margin: 15px 0;
+  font-size: 0.8rem;
+  color: #5f5f5f;
+
+}
+
+.items {
+  display: flex;
+  margin-left: 4px;
+  width: 100%;
+  position: relative;
+
+}
+
+.profile__links {
+  display: flex;
+  border-top: 1px solid #ccc;
+  height: 60px;
+  /* margin: 0 10px; */
+}
+
+.links {
+  gap: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #5f5f5f;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-basis: 50%;
+  padding: 10px 0;
+}
+
+.links__imagen {
+  width: 20px;
+}
+
+.borde {
+  border-left: 1px solid #ccc;
+}
+
+.actividades {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 630px;
+  padding: 0 20px;
+}
+
+.titulo__actividad {
+  font-size: 0.9rem;
+  color: #888;
+  font-weight: 450;
+  margin: 30px;
+}
+
+.iconos__actividad {
+  text-decoration: none;
+  color: #888;
 }
