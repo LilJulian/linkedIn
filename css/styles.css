@@ -34,18 +34,18 @@ body {
   align-items: center;
 }
 
-.principal__logo img {
+.principal__logo .imagen__principal {
   position: relative;
   width: 48px;
   height: 48px;
   margin-right: 10px;
 }
 
-form {
+.formulario {
   display: flex;
 }
 
-.principal__buscador input,
+.principal__buscador .ingresar__buscador,
 .buscador_boton {
   min-height: 35px;
   border: none;
@@ -54,12 +54,12 @@ form {
   background-color: #e1f3f4;
 }
 
-.principal__buscador button {
+.principal__buscador .buscador_boton {
   border-radius: 8px 0 0 8px;
   font-size: 1.2rem;
 }
 
-.principal__buscador input {
+.principal__buscador .ingresar__buscador {
   border-radius: 0 8px 8px 0;
   outline: none;
   font-size: 0.9rem;
@@ -104,17 +104,17 @@ form {
   transition: width 0.2s
 }
 
-li {
+.elemento__lista {
   list-style: none;
 }
 
-.menu__lista i {
+.menu__lista .bx {
   font-size: 1.4rem;
   margin-top: 3px;
   padding-bottom: 8px;
 }
 
-.menu__lista span {
+.menu__lista .mensaje__lista {
   font-size: 0.8rem;
 }
 
@@ -269,4 +269,81 @@ li {
 .iconos__actividad {
   text-decoration: none;
   color: #888;
+}
+
+/* Content */
+.content{
+  grid-area: 'content';
+
+}
+.post{
+  background-color: #fff;
+}
+.crear__post{
+  padding: 20px 25px 10px;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #ccc;
+}
+
+.imagen__post{
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: clip;
+}
+
+.escribir_post{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    margin-top: 8px;
+    resize: vertical;
+    overflow: auto;
+}
+
+.botones__post{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.icono__posteo{
+    font-size: 1.4rem;
+    color: #2874b1;
+    margin-right: 5px;
+}
+
+.contenedor__items_post{
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  width: 100%;
+  height: 40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+}
+.contenedor__item{
+  color: #fff;
+  background-color: #2874b1;
+   width: 100%;
+  height: 40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+}
+.botones__items--fondo-gris:hover{
+  background-color: #ccc;
+}
+.boton__item--fondo-azul:hover{
+  background-color: #ccc;
+}
+.icono__postblue{
+  color: #fff;
 }
